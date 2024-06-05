@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova 2° bimestre</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <article>
+        <h1>Prova 2° bimestre</h1>
+    </article>
+    <section>
+    <h1 id="caixa">Adicionar notas dos alunos abaixo:</h1>
+    <div class="form">
+    <label>Nome do Aluno</label>
+    <input type="text" id="nome" placeholder="Insira um nome...">
+    <label>Matrícula</label>
+    <input type="text" id="matricula" min="0" placeholder="Insira o número de matrícula">
+    <label for="nota">Nota 1</label>
+    <input type="number" step="0.1" min="0" max="10" class="nota" id="nota1" placeholder="Insira a nota do 1° bimestre">
+    <label for="nota">Nota 2</label>
+    <input type="number" step="0.1" min="0" max="10" class="nota" id="nota2" placeholder="Insira a nota do 2° bimestre">
+    <div class="botoes">
+    <button type="submit" id="submit" onclick="enviarRegistros()">Enviar</button>
+    <button type="reset" id="reset" onclick="apagarRegistros()">Reiniciar Dados</button>
+    </div>
+    </div>
+    </section>
+
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Matrícula</th>
+                    <th>Nota 1</th>
+                    <th>Nota 2</th>
+                    <th>Média</th>
+                    <th>Situação</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <h5>Aluno: Marco Antonio Faustini Pessoa</h5>
+        <h5>Turma: CC1Mb</h5>
+        <h5>Semestre: 2024/1</h5>
+        <h5>Data: 05/06/2024</h5>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

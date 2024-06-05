@@ -1,0 +1,97 @@
+/*Os definidores de estilo não sei se é assim que fala, acabei de inventar esse nome, mas sei que é melhor
+eles ficarem no início da página (ou no final, não tenho certeza), enfim, segue o código.*/
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(Montserrat/Montserrat-VariableFont_wght.ttf) format(truetype);
+}
+body {
+    animation: fadeIn 1s ease-in-out forwards;
+    background-color:#4a70ed;
+    font-family: Montserrat;
+}
+/*Estilo da section, aonde serão inseridos os inputs (o formulário)*/
+section {
+    margin: auto;
+    width: 40%;
+    text-align: center;
+    background-color: rgb(231, 231, 231);
+    border-radius: 25px;
+    border: 3px solid black;
+}
+input {
+    border: 1.5px solid black;
+    border-radius: 5px;
+}
+section input, label {
+    margin: 5px;
+}
+section button {
+    margin: 20px;
+    background-color: rgb(223, 223, 0);
+    border-radius: 20px;
+    width: 50%;
+    transition: 0.5s;
+    border: 1.5px solid black;
+}
+input {
+    background-color: rgb(255, 255, 255);
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    
+}
+.botoes {
+    display: flex;
+    justify-content: space-around;
+}
+#reset {
+    background-color: rgb(255, 0, 0);
+    transition: 0.5s;
+}
+section button:hover {
+    background-color: rgb(184, 184, 0);
+}
+#reset:hover {
+    background-color: rgb(180, 0, 0);
+}
+
+/*O título localizado no topo da página, que acabei decidindo definir com esse nome por nenhum motivo específico*/
+/*Mas acho bom falar pra que eu não me perca*/
+#caixa{
+    font-size: 20px;
+    padding-top: 25px;
+    
+}
+/*Onde eu coloquei o título no topo da página*/
+article {
+    text-align: center;
+    color:black;
+}
+/*Rodapé onde eu coloquei minhas informações de aluno*/
+footer {
+    display: flex;
+    flex-direction: column;
+}
+footer h5 {
+    margin: 0px;
+}
+/*Onde foi posto a tabela*/
+main {
+    margin: 25px;
+}
+table, td, th {
+    border: 1px solid black;
+    margin: auto;
+    background-color: rgb(199, 199, 199);
+}
